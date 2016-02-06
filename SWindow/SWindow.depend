@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1454725076 source:c:\users\wiish\git\windowing-library\swindow\main.cpp
+	"Window.h"
+
+1454724812 source:c:\users\wiish\git\windowing-library\swindow\src\window.cpp
+	"Window.h"
+
+1454724634 c:\users\wiish\git\windowing-library\swindow\include\window.h
+	<string>
+	"Win32Window.h"
+
+1454725167 c:\users\wiish\git\windowing-library\swindow\include\win32window.h
+	"PlatformInfo.h"
+	<windows.h>
+	<wingdi.h>
+	<GL/gl.h>
+	<stdio.h>
+
+1454724596 c:\users\wiish\git\windowing-library\swindow\include\platforminfo.h
+	<windows.h>
+

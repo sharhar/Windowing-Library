@@ -1,9 +1,28 @@
-#include <iostream>
+#include "Window.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Window window("Hello window", 640, 480);
+
+    while(!window.isCloseRequested()) {
+        window.poll();
+        glClear(GL_COLOR_BUFFER_BIT);
+        glBegin(GL_TRIANGLES);
+        glColor3f(1.0f, 0.0f, 0.0f);
+        glVertex2i(0,  1);
+        glColor3f(0.0f, 1.0f, 0.0f);
+        glVertex2i(-1, -1);
+        glColor3f(0.0f, 0.0f, 1.0f);
+        glVertex2i(1, -1);
+        glEnd();
+        glFlush();
+        window.swapBuffers();
+    }
+
+    printf("destroy");
+    window.destroy();
+
     return 0;
 }
