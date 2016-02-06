@@ -19,3 +19,38 @@
 1454724596 c:\users\wiish\git\windowing-library\swindow\include\platforminfo.h
 	<windows.h>
 
+1454774835 source:/home/shahar/Git/Windowing-Library/SWindow/main.cpp
+	"include/Window.h"
+	<stdio.h>
+
+1454775231 /home/shahar/Git/Windowing-Library/SWindow/include/Window.h
+	<string>
+	"Win32Window.h"
+	"X11Window.h"
+
+1454775259 /home/shahar/Git/Windowing-Library/SWindow/include/Win32Window.h
+	"PlatformInfo.h"
+	<windows.h>
+	<wingdi.h>
+	<GL/gl.h>
+	<stdio.h>
+
+1454775360 /home/shahar/Git/Windowing-Library/SWindow/include/PlatformInfo.h
+	<windows.h>
+	<GL/glx.h>
+	<GL/gl.h>
+	<X11/X.h>
+	<X11/keysym.h>
+
+1454775577 /home/shahar/Git/Windowing-Library/SWindow/include/X11Window.h
+	"PlatformInfo.h"
+	<stdio.h>
+	<stdlib.h>
+	<GL/glx.h>
+	<GL/gl.h>
+	<X11/X.h>
+	<X11/keysym.h>
+
+1454775249 source:/home/shahar/Git/Windowing-Library/SWindow/src/Window.cpp
+	"../include/Window.h"
+

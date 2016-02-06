@@ -11,7 +11,7 @@
 
 inline LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
-inline void platform_create(char* title, int width, int height, PlatformInfo* info) {
+inline void platform_create(const char* title, int width, int height, PlatformInfo* info) {
     int        n, pf;
 	WNDCLASSEX 	wc;
 	LOGPALETTE* lpPal;

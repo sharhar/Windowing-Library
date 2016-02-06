@@ -4,12 +4,16 @@
 #include <string>
 #ifdef _WIN32
 #include "Win32Window.h"
-#endif
+#else
+#include "X11Window.h"
+#endif // _WIN32
+
+namespace sw {
 
 class Window
 {
     public:
-        Window(char* title, int width, int height);
+        Window(const char* title, int width, int height);
         PlatformInfo* info;
         void swapBuffers();
         bool isCloseRequested();
@@ -20,5 +24,7 @@ class Window
         int m_height;
         char* m_title;
 };
+
+}
 
 #endif // WINDOW_H

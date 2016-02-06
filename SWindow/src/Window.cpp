@@ -1,6 +1,7 @@
-#include "Window.h"
+#include "../include/Window.h"
 
-Window::Window(char* title, int width, int height) {
+namespace sw {
+Window::Window(const char* title, int width, int height) {
     info = new PlatformInfo();
     platform_create(title, width, height, info);
 }
@@ -19,4 +20,5 @@ bool Window::isCloseRequested() {
 
 void Window::destroy() {
     platform_destroy(info);
+}
 }

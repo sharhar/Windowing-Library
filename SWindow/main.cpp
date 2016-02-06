@@ -1,10 +1,11 @@
-#include "Window.h"
+#include "include/Window.h"
+#include <stdio.h>
 
 using namespace std;
 
 int main()
 {
-    Window window("Hello window", 640, 480);
+    sw::Window window("Hello window", 640, 480);
 
     while(!window.isCloseRequested()) {
         window.poll();
@@ -21,7 +22,6 @@ int main()
         window.swapBuffers();
     }
 
-    printf("destroy");
     window.destroy();
 
     return 0;
